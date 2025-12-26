@@ -68,6 +68,7 @@ export default function TodoItemEditor(
         <section className={styles.dateSelectorContainer}>
           <label htmlFor='date'>Date</label>
           <input className={styles.dateInput} type='date' name='date' id='date'
+            value={todoDraft.date.toISOString().split('T')[0]}
             onChange={e => {
               const [year, month, day] =
                 e.target.value.split('-').map(Number);

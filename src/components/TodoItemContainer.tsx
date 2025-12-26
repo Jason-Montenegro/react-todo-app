@@ -75,7 +75,7 @@ export default function TodoItemContainer({ todo, handleEraseTodoItem}:
       <div className={styles.deleteBtnContainer}>
         <button className={styles.deleteBtn}
           onClick={() => handleEraseTodoItem(todoItem.id)}>
-          <img src='/src/assets/trash-bin.svg' alt='Delete todo item'/>
+          <img src='trash-bin.svg' alt='Delete todo item'/>
         </button>
       </div>
     </div>
