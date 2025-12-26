@@ -1,0 +1,108 @@
+:root {
+  /* Primary */
+  --primary-main: #1B3B6F;
+  --primary-shade: #162f59;
+  --primary-tint: #7689a9;
+
+  /* Secondary */
+  --secondary-main: #1C7293;
+  --secondary-shade: #114458;
+  --secondary-tint: #77aabe;
+
+  /* Tertiary */
+  --tertiary-main: #4C7A6B;
+  --tertiary-shade: #3B6054;
+  --tertiary-tint: #8FB3A7;
+
+  /* Grayscale */
+  --background-color: #F9FAFB;
+  --surface-color: #F3F4F6;
+  --border-color: #D1D5DB;
+  --text-color: #111827;
+  --text-color-secondary: #6B7280;
+
+  /* Font families */
+  --font-family: "Noto Sans", sans-serif;
+
+  /* Font size typescale */
+  /* Base */
+  --font-size-base: 1.6rem;   
+
+  /* Titles */
+  --font-size-h1: 3.2rem;     
+  --font-size-h2: 2.6rem;    
+  --font-size-h3: 2.1rem;    
+  --font-size-h4: 1.8rem;    
+  --font-size-h5: 1.5rem;    
+
+  /* Components */
+  --font-size-btn: 1.7rem;    
+  --font-size-p: 1.6rem;      
+  --font-size-small: 1.3rem;  
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Spacing scale */
+  --space-xxs: 0.4rem;
+  --space-xs:  0.8rem;
+  --space-sm:  1.2rem;
+  --space-md:  1.6rem;
+  --space-lg:  2.4rem;
+  --space-xl:  3.2rem;
+  --space-xxl: 4.8rem;
+
+  /* Buttons */
+  --btn-height-sm: 3.2rem;
+  --btn-height-md: 4rem;
+  --btn-height-lg: 4.8rem;
+  --btn-padding-x: var(--space-sm);
+  --btn-padding-y: var(--space-xs);
+  --btn-border-radius: 0.6rem;
+
+  /* Layout */
+  --container-max-width: 120rem;
+  --container-padding-x: var(--space-md);
+  
+  /* Border rounding */
+  --box-border-radius-softened: 6px;
+  --box-border-radius-gentle:10px;
+  --box-border-radius-moderate: 14px;
+  --box-border-width-md: 0.2rem;
+
+  /* Transition scale factors */
+  --transform-hover-scaling: 1.03;
+  --transform-active-scaling: 0.97;
+
+  /* Transition timing */
+  --transition-hover-time-scaling: 0.2s;
+  --transition-active-time-scaling: var(--transition-hover-time-scaling);
+  --transition-color-time: 0.4s;
+
+  /* Container box-shadow property  */
+  --default-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+html {
+  font-size: 62.5%; /* 1rem === 10px */
+}
+
+/* Browser Styles Normalization */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: 
+    background-color var(--transition-color-time) ease,
+    color var(--transition-color-time) ease;
+}

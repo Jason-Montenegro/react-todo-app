@@ -1,0 +1,16 @@
+button {
+  padding: var(--space-sm);
+  border-radius: var(--btn-border-radius);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-color);
+  border: 0;
+  background-color: var(--secondary-main);
+  transition: transform 0.2s ease, background-color 0.3s ease-out;
+  font-size: var(--font-size-btn);
+}
+button:hover {
+  transform: scale(var(--transform-hover-scaling));
+}
+button:active {
+  transform: scale(var(--transform-active-scaling));
+}

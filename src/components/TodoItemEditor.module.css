@@ -1,0 +1,147 @@
+.container {
+  background-color: var(--primary-main);
+  max-width: 40rem;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+
+.editorTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: var(--space-lg) 0;
+  color: #FFFF;
+  font-size: var(--font-size-h1);
+  border-bottom: var(--space-xs) solid var(--primary-shade);
+  overflow-x: scroll;
+}
+
+.editorContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1
+}
+
+.titleInputContainer {
+  font-size: var(--font-size-h2);
+  color: #FFFF;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  border-bottom: var(--space-xs) solid var(--primary-shade);
+}
+.titleInputContainer label {
+  width: fit-content;
+}
+.titleInputContainer input {
+  outline: none;
+  font-size: var(--font-size-h4);
+  padding: var(--space-xs);
+  transition: transform 0.2s ease;
+}
+.titleInputContainer input:hover {
+  transform: scale(var(--transform-hover-scaling));
+}
+.titleInputContainer input:active {
+  transform: scale(var(--transform-active-scaling));
+}
+
+.prioritySelectorContainer {
+  font-size: var(--font-size-h2);
+  color: #FFFF;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  border-bottom: var(--space-xs) solid var(--primary-shade);
+}
+.prioritySelectorContainer label {
+  width: fit-content;
+}
+.prioritySelectorContainer select {
+  outline: none;
+  font-size: var(--font-size-h4);
+  padding: var(--space-xs);
+  transition: transform 0.2s ease;
+}
+.prioritySelectorContainer select:hover {
+  transform: scale(var(--transform-hover-scaling));
+}
+
+.descriptionInputContainer {
+  font-size: var(--font-size-h2);
+  color: #FFFF;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  border-bottom: var(--space-xs) solid var(--primary-shade);
+}
+.descriptionInputContainer label {
+  width: fit-content;
+}
+.descriptionInputContainer textarea {
+  outline: none;
+  font-size: var(--font-size-h4);
+  padding: var(--space-xs);
+  resize: none;
+  width: 100%;
+  min-height: 20rem;
+  transition: transform 0.2s ease;
+}
+.descriptionInputContainer textarea:hover {
+  transform: scale(var(--transform-hover-scaling));
+}
+.descriptionInputContainer textarea:active {
+  transform: scale(var(--transform-active-scaling));
+}
+
+.dateSelectorContainer {
+  font-size: var(--font-size-h2);
+  color: #FFFF;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-lg);
+  border-bottom: var(--space-xs) solid var(--primary-shade);
+}
+.dateSelectorContainer label {
+  width: fit-content;
+}
+.dateSelectorContainer input {
+  outline: none;
+  font-size: var(--font-size-h4);
+  padding: var(--space-xs);
+  transition: transform 0.2s ease;
+}
+.dateSelectorContainer input:hover {
+  transform: scale(var(--transform-hover-scaling));
+}
+.dateSelectorContainer input:active {
+  transform: scale(var(--transform-active-scaling));
+}
+
+.addDraftButton {
+  color: #FFFF;
+  align-self: center;
+  padding: var(--space-md);
+  margin: var(--space-md);
+
+}
+.addDraftButton:hover {
+  background-color: var(--secondary-tint);
+}
+.addDraftButton:active {
+  background-color: var(--secondary-main);
+}
+
+@media (max-width: 820px) {
+  .container {
+    min-width: 100%;
+  }
+}

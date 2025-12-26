@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.todoItemsDashboard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 100vh;
+}
+
+.todoList {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+@media (max-width: 82rem) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
